@@ -42,6 +42,8 @@ applyPagination (valLists,Searchtext)
 locallyTime ()
 ```
 
+[![AngularJs online Training Lab Exercise](/images/AngularJs_Online_training_lab_exercise.png)](https://www.youtube.com/watch?v=qcj67ULN7W4 "Online AngularJs Training Lab Exercise")
+
 __What you learn by doing this lab exercise?__
 
 -  How to create tables in AngularJs?
