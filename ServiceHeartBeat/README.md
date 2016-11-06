@@ -43,11 +43,11 @@ locallyTime ()
 ```
 
 __What you learn by doing this lab exercise?__
-1. How to create tables in AngularJs?
-2. How to use ng-repeat to load data dynamically.
-3. Configure AngularJs filters to search particular text in the table.
-4. Learn AngularJs module configuration.
-5. Learn how to implement the sorting mechanism in AngularJs.
+1.  How to create tables in AngularJs?
+2.  How to use ng-repeat to load data dynamically.
+3.  Configure AngularJs filters to search particular text in the table.
+4.  Learn AngularJs module configuration.
+5.  Learn how to implement the sorting mechanism in AngularJs.
  
 This is one of the sample lab exercises which we are using to teach the student in the lab.
 Like this, we are using innovative lab exercises to delivery core concepts in better and fast understanding way.
