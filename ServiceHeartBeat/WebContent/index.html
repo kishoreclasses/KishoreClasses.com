@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US" ng-app="heartbeatApp">
+<head>
+<title>Service HeartBeat Reporter</title>
+<!--Author Kishoreclasses.com 
+This file is created in  AngularJs lab exercise for AngularJs Online Training Course.
+-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- <link rel="stylesheet" href="fonts/font-awesome.min.css"> -->
+<link rel="stylesheet" href="css/style.css?nc=1">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<div style="border-bottom: solid;">
+			<img src="images/service_HeartBeat.jpg" class="img-rounded pull-left"
+				alt="Cinque Terre" width="150" height="150">
+			<div class="text-center">
+				<div class="container">
+
+					<p class="h1">Service HeartBeat</p>
+					<small><cite title="Source Title">Live</cite> Service
+						Status Report</small>
+
+				</div>
+			</div>
+		</div>
+		<br /> <br />
+		<div class="text-left">
+
+			<p>
+				<span class="label label-warning">NOTE:</span> Below shown service
+				status report is up-to-the-Minute Report of service availability.
+			<p>
+		</div>
+		<br />
+		<div ng-controller="serviceStatusTableCtrl"
+			class="panel panel-default">
+			<div class="panel-heading">
+				<div class="panel-title pull-left">
+					<h4>Service Status Report...</h4>
+				</div>
+				<div class="panel-title pull-right">Last Updated:
+					{{lastUpdated}}</div>
+				<div class="clearfix"></div>
+			</div>
+
+			<div class="panel-body col-lg-12 col-md-12 col-sm-12"
+				style="padding-top: 4%; padding-right: 6%; padding-left: 6%;">
+				<div class="input-group">
+					<input class="form-control" ng-model="searchText"
+						placeholder="Search by Name" type="search" ng-change="search()" />
+					<span class="input-group-addon"> <span
+						class="glyphicon glyphicon-search"></span>
+					</span>
+				</div>
+				<table class="table  table-hover data-table myTable"
+					style="border-style: solid;">
+					<thead>
+						<!--tr><th  class="col-lg-12 bg-info" colspan="7"><I>Note:Last Updated 30 Mins back..</I></th></tr-->
+						<tr>
+							<th class="ServiceId"><a href="#"
+								ng-click="sortByColumn('ServiceId')">ServiceId <span
+									class="{{HeaderIcon[0]}}"></span>
+							</a></th>
+							<th class="name"><a ng-click="sortByColumn('name')" href="#">
+									Name <span class="{{HeaderIcon[1]}}"></span>
+							</a></th>
+							<th class="status1"><a ng-click="sortByColumn('status1')"
+								href="#"> Current <span class="{{HeaderIcon[2]}}"></span>
+							</a>
+							<th class="status2"><a ng-click="sortByColumn('status2')"
+								href="#"> Aug 25 <span class="{{HeaderIcon[3]}}"></span>
+							</a>
+							<th class="status3"><a ng-click="sortByColumn('status3')"
+								href="#"> Aug 24<span class="{{HeaderIcon[4]}}"></span>
+							</a>
+							<th class="status4"><a ng-click="sortByColumn('status4')"
+								href="#"> Aug 23<span class="{{HeaderIcon[5]}}"></span>
+							</a>
+							<th class="status5"><a ng-click="sortByColumn('status5')"
+								href="#"> Aug 22<span class="{{HeaderIcon[6]}}"></span>
+							</a></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr
+							ng-repeat="item in listByPage[currentPage] | orderBy:columnToOrder:isReverseEnabled"
+							ng-class-odd="'odd'" ng-class-even="'even'">
+							<td id="colServiceId">{{item.ServiceId}}</td>
+							<td id="colName">{{item.name}}</td>
+							<td><i class="fa fa-2x fa-{{getIconByStatus(item.status1)}}"
+								aria-hidden="true"></i></td>
+							<td><i class="fa fa-2x fa-{{getIconByStatus(item.status2)}}"
+								aria-hidden="true"></i></td>
+							<td><i class="fa fa-2x fa-{{getIconByStatus(item.status3)}}"
+								aria-hidden="true"></i></td>
+							<td><i class="fa fa-2x fa-{{getIconByStatus(item.status4)}}"
+								aria-hidden="true"></i></td>
+							<td><i class="fa fa-2x fa-{{getIconByStatus(item.status5)}}"
+								aria-hidden="true"></i></td>
+						</tr>
+					</tbody>
+
+				</table>
+				<br /> <br />
+				<div class="pull-right">
+					<i class="fa fa-2x fa-check-circle-o" aria-hidden="true"></i>&nbsp;Service
+					is Up and Running &nbsp;&nbsp; <i class="fa fa-2x fa-clock-o"
+						aria-hidden="true"></i>&nbsp;Service is Down&nbsp;&nbsp; <i
+						class="fa fa-2x fa-times-circle-o" aria-hidden="true"></i>&nbsp;Service
+					is having issues.
+				</div>
+
+			</div>
+		</div>
+		<!-- Ends Controller -->
+	</div>
+
+
+	<!-- <script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+		
+	<script
+		src="js/lib/jquery.min.js"></script> 
+		
+		
+	<!-- <script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
+	<script
+		src="js/lib/bootstrap.min.js"></script> 
+		
+	<!-- <script
+		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script> -->
+     <script
+		src="js/lib/angular.min.js"></script> 
+		
+	<!-- <script
+		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js"></script> -->
+	<script
+		src="js/lib/angular-route.min.js"></script> 
+		
+	<!-- <script
+		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script> -->
+	<script
+		src="js/lib/angular-animate.min.js"></script> 
+		
+	<!-- <script
+		src="https://angular-ui.github.io/ui-router/release/angular-ui-router.min.js"></script> -->
+	<script
+		src="js/lib/angular-ui-router.min.js"></script> -->
+
+	<!-- <script src="http://underscorejs.org/underscore.js"></script> -->
+	<script src="js/lib/underscore.js"></script> 
+	
+	<script src="js/app.js?nc=2"></script>
+	<script src="js/service.js?d=1"></script>
+	<script src="js/controller.js?nc=1"></script>
+</body>
+</html>

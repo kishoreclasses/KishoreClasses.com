@@ -1,0 +1,51 @@
+/*
+ Author:Kishoreclasses.com 
+ This file is created in  AngularJs lab exercise for AngularJs Online Training Course.
+*/
+.fa-check-circle-o {
+	color: #5cb85c;
+}
+
+.fa-clock-o {
+	color: #f0ad4e;
+}
+
+.fa-times-circle-o {
+	color: #d9534f;
+}
+
+.noborder_headerStyle {
+	font-family: "Segoe UI", Arial, sans-serif;
+	color: black;
+	border-bottom: none;
+}
+
+.odd {
+	background-color: white;
+}
+
+.even, th {
+	background-color: #DCDCDC;
+}
+
+th>a {
+	color: black;
+}
+
+td {
+	/*border-right: 1px solid black;*/
+	text-align: left;
+}
+
+th {
+	text-align: left;
+	background-color: darkgray;
+}
+
+#colServiceId, #colName, .ServiceId, .name {
+	text-align: left;
+}
+
+body {
+	padding-top: 10px;
+} /*for fixed header*/
