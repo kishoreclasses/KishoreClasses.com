@@ -42,7 +42,7 @@ applyPagination (valLists,Searchtext)
 locallyTime ()
 ```
 
-[![AngularJs online Training Lab Exercise](/images/AngularJs_Online_training_lab_exercise.png)](https://www.youtube.com/watch?v=qcj67ULN7W4 "Online AngularJs Training Lab Exercise")
+[![AngularJs online Training Lab Exercise](https://kishoreclasses.com/images/lady-happy-with-java-job-support.jpg)](https://www.youtube.com/watch?v=qcj67ULN7W4 "Online AngularJs Training Lab Exercise")
 
 __What you learn by doing this lab exercise?__
 
