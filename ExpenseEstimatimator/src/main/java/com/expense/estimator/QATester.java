@@ -4,7 +4,7 @@ package com.expense.estimator;
 /**
  * This class represent QATester
  * @author KishoreClasses.com
- *
+ * This class developed  as part of sample, in Java Assignment Help Service.
  */
 
 public class QATester implements Employee {

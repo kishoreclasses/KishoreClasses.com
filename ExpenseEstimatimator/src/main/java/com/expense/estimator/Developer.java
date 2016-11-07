@@ -3,6 +3,7 @@ package com.expense.estimator;
 /**
  * This class represent Developer
  * @author KishoreClasses.com
+ * This class developed  as part of sample, in Java Assignment Help Service.
  *
  */
 

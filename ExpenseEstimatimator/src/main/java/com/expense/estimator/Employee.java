@@ -3,7 +3,7 @@ package com.expense.estimator;
 /**
  * This interface represent Employee
  * @author KishoreClasses.com
- *
+ *This class developed  as part of sample, in Java Assignment Help Service.
  */
 public interface Employee {
 

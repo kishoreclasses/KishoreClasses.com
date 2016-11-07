@@ -5,8 +5,8 @@ import java.util.Iterator;
 import java.util.List;
 /**
  * This class represent department
- * @author KishoreClasses.com
- *
+ * @author KishoreClasses.com  
+ * This class developed  as part of sample, in Java Assignment Help Service.
  */
 public class Department {
 	

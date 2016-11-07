@@ -8,6 +8,7 @@ import java.util.List;
  * This class represent Manager
  * 
  * @author KishoreClasses.com
+ * This class developed  as part of sample, in Java Assignment Help Service.
  *
  */
 public class Manager implements Employee {

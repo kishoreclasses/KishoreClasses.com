@@ -7,6 +7,7 @@ import org.junit.Test;
  * This is class to test different scenarios of salary estimation
  * 
  * @author KishoreClasses.com
+ * This class developed  as part of sample, in Java Assignment Help Service.
  *
  */
 public class EstimatorServiceTest {
