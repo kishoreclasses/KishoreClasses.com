@@ -55,5 +55,4 @@ __What you learn by doing this lab exercise?__
 This is one of the sample lab exercises which we are using to teach the student in the lab.
 Like this, we are using innovative lab exercises to delivery core concepts in better and fast understanding way.
 
-If you are Looking for AngularJs online training  please contact us 
-[http://www.Kishorelasses.com](http://www.KishoreClasses.com)
+If you are Looking for AngularJs online training  please contact us www.KishoreClasses.com
