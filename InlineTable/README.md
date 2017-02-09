@@ -53,4 +53,4 @@ __What you learn by doing this lab exercise?__
 This is one of the assignments which we providing to the student during our Angular 2 course.By doing these type of exercises student get practical knowledge about the Angular2 application.
 
 If you are Looking for AngularJs online training  please contact us   
-   http://www.KishoreClasses.com
+   KishoreClasses.com
